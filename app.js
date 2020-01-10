@@ -29,8 +29,8 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-// Database connection
-mongoose.connect("mongodb+srv://pathos41:letsgomavs41@pathos41-pc7te.mongodb.net/restful_blog_app?retryWrites=true&w=majority", {
+// Database connection, replace the connection string
+mongoose.connect("mongodb+srv://<username>:<password>@pathos41-pc7te.mongodb.net/restful_blog_app?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 	useFindAndModify: false
