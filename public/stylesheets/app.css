@@ -1,7 +1,4 @@
 body{
-	/* background: url("https://images.unsplash.com/photo-1559304906-aff847bf57e8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=757&q=80");
-	background-repeat: no-repeat;
-	background-size: cover; */
 	background: rgba(0, 0, 0, 0.7);
 }
 
@@ -40,6 +37,20 @@ i.icon{
 
 .cancel-btn{
 	float: right;
+}
+
+.right-float{
+	float: right;
+}
+
+.username{
+	color: white;
+	line-height: 40px;
+	margin-right: 10px;
+}
+
+#black-text{
+	color: black;
 }
 
 @media (min-height: 320px) {

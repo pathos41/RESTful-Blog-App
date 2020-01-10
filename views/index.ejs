@@ -1,6 +1,6 @@
 <%- include("./partials/header") %>
 <div class="ui main text container">
-	<div class="ui huge header">RESTful Blog App</div>
+	<div class="ui huge header">Recent blogs</div>
 	<div class="ui top attached segment">
 		<div class="ui divided items">
 			<% blogs.forEach((blog) => { %>
@@ -10,9 +10,8 @@
 					</div>
 					<div class="content">
 						<a class="header" href="/blogs/<%= blog._id %>"><%= blog.title %></a>
-						<div class="meta">
-							<span><%= blog.created.toDateString() %></span>
-						</div>
+						<span class="meta right-float"><%= blog.created.toDateString() %></span>
+						<p>by <a href="/blogs/articles/<%= blog.author %>"><i><%= blog.author %></i></a></p>
 						<div class="description">
 							<p><%- blog.body.slice(0, 100) %>...</p>
 						</div>
