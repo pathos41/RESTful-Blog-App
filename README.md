@@ -1,4 +1,6 @@
 # RESTfulBlogApp
+Visit the website at <a href="https://pathos41-blog.herokuapp.com/">pathos41-blog</a>.
+
 A simple blog app using node.js, mongodb and RESTful routing.
 
 Expressjs is used as framework for node.js, and MongoDB is used as database.
